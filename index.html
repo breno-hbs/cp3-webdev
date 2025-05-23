@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP3 WebDev</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <form id="form" style="display: flex; flex-direction: column;">
+        <label for="produto">Produto: </label>
+        <input type="text" id="produto">
+
+        <label for="preco">Preço: </label>
+        <input type="number" id="preco">
+
+        <label for="categoria">Categoria: </label>
+        <select id="categoria">
+            <option value="Tecnologia">Tecnologia</option>
+            <option value="Alimentos">Alimentos</option>
+            <option value="Moda">Moda</option>  
+        </select>
+
+        <br>
+
+        <button id="btnCadastrar">Cadastrar Produto</button>
+        <p id="mensagemErro"></p>
+
+        <h2>Produtos Cadastrados</h2>
+        <ul id="produtosCadastrados">
+            
+        </ul>
+    </form>
+<script src="./index.js"></script>
+</body>
+
+</html>
